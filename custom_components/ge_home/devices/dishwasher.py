@@ -33,8 +33,8 @@ class DishwasherApi(ApplianceApi):
             GeErdBinarySensor(self, ErdCode.DISHWASHER_IS_CLEAN),
             GeErdBinarySensor(self, ErdCode.DISHWASHER_REMOTE_START_ENABLE),
             
-            # Start/Stop switch using custom ERD (0x0050)
-            GeDishwasherStartStopSwitch(self, 0x0050),
+            # Start/Stop switch using Remote Start Selected Cycle ERD (0x2149)
+            GeDishwasherStartStopSwitch(self, 0x2149),
 
             #User Setttings
             GeErdPropertySensor(self, ErdCode.DISHWASHER_USER_SETTING, "mute", icon_override="mdi:volume-mute"),

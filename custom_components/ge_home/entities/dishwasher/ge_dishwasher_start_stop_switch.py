@@ -15,7 +15,8 @@ class GeDishwasherStartStopSwitch(GeErdEntity, SwitchEntity):
 
     def __init__(self, api: ApplianceApi, erd_code: ErdCodeType):
         super().__init__(api, erd_code)
-        self._erd_code = erd_code
+        self._erd_code = erd_code  # 0x2149 - Remote Start Selected Cycle
+        self._stop_erd_code = 0x2040  # Remote Stop Cycle Request
 
     @property
     def name(self) -> str:
@@ -71,8 +72,8 @@ class GeDishwasherStartStopSwitch(GeErdEntity, SwitchEntity):
                 _LOGGER.error("Cannot start dishwasher - remote start is not enabled")
                 return
                 
-            # Send start command using the custom ERD
-            await self.appliance.async_set_erd_value(self._erd_code, 1)
+            # Send start command using Remote Start Selected Cycle ERD (0 = Start Remote Cycle command)
+            await self.appliance.async_set_erd_value(self._erd_code, 0)
             _LOGGER.info(f"Start command sent to dishwasher {self.unique_id}")
         except Exception as e:
             _LOGGER.error(f"Error starting dishwasher {self.unique_id}: {e}")
@@ -81,8 +82,8 @@ class GeDishwasherStartStopSwitch(GeErdEntity, SwitchEntity):
         """Stop the dishwasher.""" 
         _LOGGER.info(f"Stopping dishwasher {self.unique_id}")
         try:
-            # Send stop command using the custom ERD
-            await self.appliance.async_set_erd_value(self._erd_code, 0)
+            # Send stop command using Remote Stop Cycle Request ERD (0 = Stop current cycle)
+            await self.appliance.async_set_erd_value(self._stop_erd_code, 0)
             _LOGGER.info(f"Stop command sent to dishwasher {self.unique_id}")
         except Exception as e:
             _LOGGER.error(f"Error stopping dishwasher {self.unique_id}: {e}")
