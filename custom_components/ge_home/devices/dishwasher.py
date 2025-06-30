@@ -6,6 +6,7 @@ from gehomesdk.erd import ErdCode, ErdApplianceType
 
 from .base import ApplianceApi
 from ..entities import GeErdSensor, GeErdBinarySensor, GeErdPropertySensor, GeErdNumber
+from ..entities.dishwasher.ge_dishwasher_start_stop_switch import GeDishwasherStartStopSwitch
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -31,6 +32,9 @@ class DishwasherApi(ApplianceApi):
             GeErdBinarySensor(self, ErdCode.DISHWASHER_DOOR_STATUS),
             GeErdBinarySensor(self, ErdCode.DISHWASHER_IS_CLEAN),
             GeErdBinarySensor(self, ErdCode.DISHWASHER_REMOTE_START_ENABLE),
+            
+            # Start/Stop switch using custom ERD (0x0050)
+            GeDishwasherStartStopSwitch(self, 0x0050),
 
             #User Setttings
             GeErdPropertySensor(self, ErdCode.DISHWASHER_USER_SETTING, "mute", icon_override="mdi:volume-mute"),
