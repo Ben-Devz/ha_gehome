@@ -6,7 +6,7 @@ from homeassistant.helpers.entity import Entity
 from gehomesdk import ErdCode, ErdApplianceType, ErdRemoteCommand
 
 from .base import ApplianceApi
-from ..entities import GeErdSensor, GeErdBinarySensor, GeErdPropertySensor, GeErdPropertyBinarySensor, GeDishwasherCommandButton
+from ..entities import GeErdSensor, GeErdBinarySensor, GeErdPropertySensor, GeErdPropertyBinarySensor, GeDishwasherCommandButton, GeDishwasherWashControlButton
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -73,7 +73,14 @@ class DualDishwasherApi(ApplianceApi):
                     GeErdPropertyBinarySensor(self, ErdCode.DISHWASHER_USER_SETTING, "wifi_enabled", erd_override="lower_remote_command_enable", icon_off_override="mdi:wifi-off", icon_on_override="mdi:wifi"),
                     GeDishwasherCommandButton(self, ErdCode.DISHWASHER_REMOTE_START_COMMAND, ErdRemoteCommand.START_RESUME, erd_override="lower_remote_command"),
                     GeDishwasherCommandButton(self, ErdCode.DISHWASHER_REMOTE_START_COMMAND, ErdRemoteCommand.PAUSE, erd_override="lower_remote_command"),
-                    GeDishwasherCommandButton(self, ErdCode.DISHWASHER_REMOTE_START_COMMAND, ErdRemoteCommand.CANCEL, erd_override="lower_remote_command")
+                    GeDishwasherCommandButton(self, ErdCode.DISHWASHER_REMOTE_START_COMMAND, ErdRemoteCommand.CANCEL, erd_override="lower_remote_command"),
+                    # F&P-firmware DishDrawers (e.g. GE DDS192AA) ignore the
+                    # REMOTE_START_COMMAND ERDs; the working control path is the
+                    # run-state field inside DISHWASHER_USER_SETTING. See
+                    # ge_dishwasher_wash_control_button.py for the captured protocol.
+                    GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "start_resume", erd_override="lower_wash"),
+                    GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "pause", erd_override="lower_wash"),
+                    GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "cancel", erd_override="lower_wash")
                 ]
             )
 
