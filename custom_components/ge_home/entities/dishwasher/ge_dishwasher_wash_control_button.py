@@ -55,15 +55,32 @@ class GeDishwasherWashControlButton(GeErdButton):
     def name(self) -> Optional[str]:
         return f"{super().name} {self._command.replace('_', ' ').title()}"
 
+    # Bits 10-11 of the user-setting register hold the run-state field
+    # (the SDK's "dry_option" position).
+    _RUN_STATE_MASK = 0xC00
+    _RUN_STATE_SHIFT = 10
+
     async def async_press(self) -> None:
-        current = self.appliance.get_erd_value(self.erd_code)
+        """Raw read-modify-write of the run-state field.
+
+        We deliberately bypass ErdUserSettingConverter.erd_encode: it packs the
+        register through erd_encode_int() with the default 2-byte length, which
+        raises OverflowError for this 3-byte register (upstream never writes
+        it, so the bug was never hit). Editing the raw hex also guarantees
+        every other settings bit is left byte-identical.
+        """
+        raw = self.appliance.get_raw_erd_value(self.erd_code)
+        if not raw:
+            _LOGGER.error("Wash control '%s': no raw value cached for %s; cannot write",
+                          self._command, self.erd_code)
+            return
         target = self.COMMANDS[self._command][0]
-        new_value = current._replace(dry_option=target)
-        _LOGGER.info(
-            "Wash control '%s': writing %s run-state field %s (was %s)",
-            self._command, self.erd_code, target, current.dry_option,
-        )
-        await self.appliance.async_set_erd_value(self.erd_code, new_value)
+        i = int(raw, 16)
+        new_i = (i & ~self._RUN_STATE_MASK) | (target.value << self._RUN_STATE_SHIFT)
+        new_raw = format(new_i, "0{}x".format(len(raw)))
+        _LOGGER.info("Wash control '%s': %s raw %s -> %s", self._command,
+                     self.erd_code, raw, new_raw)
+        await self.appliance.client.async_set_erd_value(self.appliance, self.erd_code, new_raw)
 
     def _get_icon(self) -> Optional[str]:
         return self.COMMANDS[self._command][1]
