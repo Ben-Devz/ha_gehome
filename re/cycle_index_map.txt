@@ -1,0 +1,12 @@
+idx=0 acked=1 d004_after=unchanged 
+idx=1 acked=1 d004_after=0082 (130 min)
+idx=2 acked=1 d004_after=0073 (115 min)
+idx=3 acked=1 d004_after=unchanged 
+idx=4 acked=1 d004_after=unchanged 
+idx=5 acked=1 d004_after=unchanged 
+idx=6 acked=1 d004_after=00CA (202 min)
+idx=7 acked=1 d004_after=000F (15 min)
+idx=8 acked=1 d004_after=006E (110 min)
+idx=9 acked=1 d004_after=002E (46 min)
+idx=10 acked=1 d004_after=unchanged 
+idx=11 acked=1 d004_after=unchanged 

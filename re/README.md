@@ -64,3 +64,28 @@ Nothing valid in 0xD100-D4FF. Not needed now that the control command works.
 The scripts read the appliance MAC and the Brillion user id from the
 environment: `GE_MAC=<mac> GE_USER_ID=<user id> python3 ctl_scan.py ...`.
 The data files have both replaced with `<GE_MAC>` / `<GE_USER_ID>`.
+
+## 2026-10-26 (later): program, Sanitize, pause/resume, LAN
+
+GE's ERD definitions (geappliances/public-appliance-api-documentation,
+appliance_api_erd_definitions.json) name Sadie's registers:
+- 0x3007 User Settings: Selected Cycle is bits 1-4 (the SDK reads 3), Wash Temperature bits 12-14.
+- 0x3086 Enable Features: bit 2 = Sani. Sadie normally reads 04 = Sanitize on.
+- 0x3250 Cycle Modifier Actual (½ Load, Quiet, Sanitize, Dry+, ...) is valid but not published.
+  0x3251 (Requested) is not valid on this drawer.
+
+Writes to both 0x3007 (program) and 0x3086 (Sanitize) are accepted on an idle drawer, and the
+drawer echoes the new value. Changing the program clears Sanitize. After each change the idle
+estimate 0xD004 updates; cycle_index_map.txt has the estimates.
+- Program indexes: 1 = 130 min (Heavy), 2 = 115 min (Medium; 131 with Sanitize), 6 = 202 min (Eco),
+  7 = 15 min (Rinse), 8 = 110 min (Delicate), 9 = 46 min (Fast). 0, 3-5, 10, 11 left the estimate unchanged.
+  The names are inferred from the durations.
+- Medium + Sanitize = 0x3007 cycle 2 + 0x3086 04 → 131 min, which matches Ben's usual loads and tonight's remote start.
+
+Pause/resume through the deployed HA buttons, on the real drawer:
+start → run field 1 (300484); pause → run field 2 (300884, the same as a door-open pause;
+0x300e stays 03); resume → 300484; cancel → 300084 and 0x300e 11.
+
+LAN: Sadie has no open TCP ports (full 1-65535 connect scan) and no mDNS
+or SSDP replies. The WiFi module is outbound-only, so there is no local network route like localtuya.
+Local control would mean hardware on the appliance bus (see ESPHome-gea).

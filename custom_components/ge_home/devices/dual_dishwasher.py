@@ -6,7 +6,7 @@ from homeassistant.helpers.entity import Entity
 from gehomesdk import ErdCode, ErdApplianceType, ErdRemoteCommand
 
 from .base import ApplianceApi
-from ..entities import GeErdSensor, GeErdBinarySensor, GeErdPropertySensor, GeErdPropertyBinarySensor, GeDishwasherCommandButton, GeDishwasherWashControlButton
+from ..entities import GeErdSensor, GeErdBinarySensor, GeErdPropertySensor, GeErdPropertyBinarySensor, GeDishwasherCommandButton, GeDishwasherWashControlButton, GeDishDrawerProgramSelect, GeDishDrawerSanitizeSwitch
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -76,11 +76,14 @@ class DualDishwasherApi(ApplianceApi):
                     GeDishwasherCommandButton(self, ErdCode.DISHWASHER_REMOTE_START_COMMAND, ErdRemoteCommand.CANCEL, erd_override="lower_remote_command"),
                     # F&P-firmware DishDrawers (e.g. GE DDS192AA) ignore the
                     # REMOTE_START_COMMAND ERDs; the working control path is the
-                    # run-state field inside DISHWASHER_USER_SETTING. See
-                    # ge_dishwasher_wash_control_button.py for the captured protocol.
+                    # cloud's dishdrawer-start/-pause/-stop control command. See
+                    # ge_dishwasher_wash_control_button.py.
                     GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "start_resume", erd_override="lower_wash"),
                     GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "pause", erd_override="lower_wash"),
-                    GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "cancel", erd_override="lower_wash")
+                    GeDishwasherWashControlButton(self, ErdCode.DISHWASHER_USER_SETTING, "cancel", erd_override="lower_wash"),
+                    # Program and Sanitize, see ge_dishdrawer_options.py
+                    GeDishDrawerProgramSelect(self, erd_override="lower_wash_program"),
+                    GeDishDrawerSanitizeSwitch(self, erd_override="lower_wash_sanitize")
                 ]
             )
 
