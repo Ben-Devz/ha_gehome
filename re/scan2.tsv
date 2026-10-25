@@ -1,0 +1,49 @@
+0x3100	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3100"}
+0x3101	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3101"}
+0x3109	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3109"}
+0x310A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x310A"}
+0x310B	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x310B"}
+# done 3100 31FF
+0x3300	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3300"}
+# done 3300 33FF
+0x3401	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3401"}
+0x340D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x340D"}
+0x3487	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3487"}
+0x348A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x348A"}
+# done 3400 34FF
+0x3596	ERR	<urlopen error [Errno 111] Connection refused>
+0x3597	ERR	<urlopen error [Errno 111] Connection refused>
+0x3598	ERR	<urlopen error [Errno 111] Connection refused>
+0x3599	ERR	<urlopen error [Errno 111] Connection refused>
+0x359A	ERR	<urlopen error [Errno 111] Connection refused>
+0x359B	ERR	<urlopen error [Errno 111] Connection refused>
+0x359C	ERR	<urlopen error [Errno 111] Connection refused>
+0x359D	ERR	<urlopen error [Errno 111] Connection refused>
+0x359E	ERR	<urlopen error [Errno 111] Connection refused>
+0x359F	ERR	<urlopen error [Errno 111] Connection refused>
+0x35A0	ERR	<urlopen error [Errno 111] Connection refused>
+0x35A1	ERR	HTTP Error 400: Bad Request
+0x35A2	ERR	HTTP Error 400: Bad Request
+0x35A3	ERR	HTTP Error 400: Bad Request
+# done 3500 35FF
+0x3600	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3600"}
+0x3610	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3610"}
+0x3611	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3611"}
+0x3612	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3612"}
+0x3613	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3613"}
+0x3614	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3614"}
+0x3615	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3615"}
+0x3616	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3616"}
+0x3617	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3617"}
+0x3618	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3618"}
+0x3619	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3619"}
+0x361A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x361A"}
+0x361B	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x361B"}
+0x361C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x361C"}
+0x361D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x361D"}
+# done 3600 36FF
+# done 3700 37FF
+# done D100 D1FF
+# done D300 D3FF
+# done D400 D4FF
+DONE

@@ -15,6 +15,7 @@ from .const import (
 )
 from .exceptions import HaAuthError, HaCannotConnect
 from .update_coordinator import GeHomeUpdateCoordinator
+from .debug_services import async_register_debug_services
 
 _LOGGER = logging.getLogger(__name__)
 CONFIG_SCHEMA = vol.Schema({DOMAIN: vol.Schema({})}, extra=vol.ALLOW_EXTRA)
@@ -125,6 +126,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
         raise ConfigEntryNotReady from exc
             
     hass.bus.async_listen_once(EVENT_HOMEASSISTANT_STOP, coordinator.shutdown)
+    async_register_debug_services(hass)
 
     # Reload the entry when options change (e.g. device identifier mode)
     entry.async_on_unload(entry.add_update_listener(async_update_options))

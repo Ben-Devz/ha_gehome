@@ -34,6 +34,7 @@ from gehomesdk import GeAuthFailedError, GeGeneralServerError, GeNotAuthenticate
 
 from .const import *
 from .devices import ApplianceApi, get_appliance_api_type
+from .debug_services import trace_erd_update
 from .exceptions import HaAuthError, HaCannotConnect
 
 PLATFORMS = [
@@ -418,6 +419,7 @@ class GeHomeUpdateCoordinator(DataUpdateCoordinator):
         appliance, update_data = data
 
         self._dump_appliance(appliance, update_data)
+        trace_erd_update(self.hass, appliance, update_data)
         
         if not self._is_appliance_valid(appliance):
             _LOGGER.debug(f"on_device_update: skipping invalid appliance {appliance.mac_addr}")

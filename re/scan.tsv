@@ -1,0 +1,108 @@
+0x3000	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3000"}
+0x3001	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3001"}
+0x3003	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3003", "value": "A2", "time": "2026-10-24T17:33:39.545Z"}
+0x3007	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3007", "value": "300004", "time": "2026-10-25T14:30:07.129Z"}
+0x3008	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3008", "value": "0000", "time": "2026-10-24T17:33:39.545Z"}
+0x3009	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3009", "value": "000004E10000", "time": "2026-10-25T05:54:37.774Z"}
+0x300C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x300C", "value": "0700", "time": "2026-10-24T17:33:39.545Z"}
+0x300D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x300D"}
+0x300E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x300E", "value": "11", "time": "2026-10-25T06:17:32.286Z"}
+0x300F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x300F", "value": "0000000000008C0000000000", "time": "2026-10-25T05:38:55.898Z"}
+0x301C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x301C"}
+0x301D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x301D"}
+0x301F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x301F"}
+0x3037	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3037", "value": "01", "time": "2026-10-25T07:19:24.315Z"}
+0x303E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x303E"}
+0x304E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x304E"}
+0x3086	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3086", "value": "04", "time": "2026-10-24T17:33:39.545Z"}
+0x3087	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3087"}
+0x308A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x308A"}
+0x3200	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3200"}
+0x3201	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3201"}
+0x3203	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3203", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x3207	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3207", "value": "000000", "time": "2026-10-24T17:33:39.545Z"}
+0x3208	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3208", "value": "0000", "time": "2026-10-24T17:33:39.545Z"}
+0x3209	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3209", "value": "000000000000", "time": "2026-10-24T17:33:39.545Z"}
+0x320A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x320A"}
+0x320C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x320C"}
+0x320E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x320E", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x320F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x320F", "value": "000000000000000000000000", "time": "2026-10-24T17:33:39.545Z"}
+0x3210	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3210"}
+0x3211	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3211"}
+0x3212	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3212"}
+0x3213	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3213"}
+0x3214	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3214"}
+0x3215	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3215"}
+0x3216	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3216"}
+0x3217	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3217"}
+0x3218	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3218"}
+0x3219	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3219"}
+0x321A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321A"}
+0x321B	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321B"}
+0x321C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321C"}
+0x321D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321D"}
+0x321E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321E"}
+0x321F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x321F"}
+0x3220	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3220"}
+0x3221	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3221"}
+0x3222	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3222", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x322B	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x322B"}
+0x322D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x322D"}
+0x322F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x322F"}
+0x3231	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3231"}
+0x3237	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3237", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x323E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x323E"}
+0x3245	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3245"}
+0x324D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x324D"}
+0x3250	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3250"}
+0x3252	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3252"}
+0x3261	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3261"}
+0x3262	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3262"}
+0x3264	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x3264"}
+0xD003	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD003"}
+0xD004	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD004", "value": "0000", "time": "2026-10-25T06:17:32.286Z"}
+0xD005	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD005"}
+0xD006	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD006"}
+0xD007	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD007"}
+0xD00A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD00A"}
+0xD00D	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD00D"}
+0xD010	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD010"}
+0xD016	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD016"}
+0xD019	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD019"}
+0xD203	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD203"}
+0xD204	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD204", "value": "0000", "time": "2026-10-24T17:33:39.545Z"}
+0xD205	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD205"}
+0xD207	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0xD207"}
+0x0001	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0001", "value": "0844445331393241410000000000000000000000000000000000000000000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0002	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0002", "value": "09554C5636363430313000000000000000000000000000000000000000000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0004	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0004"}
+0x0006	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0006"}
+0x0007	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0007"}
+0x0008	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0008", "value": "20", "time": "2026-10-24T17:33:39.545Z"}
+0x0009	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0009", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x000A	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x000A", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x0035	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0035", "value": "00000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0050	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0050"}
+0x0051	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0051"}
+0x0060	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0060"}
+0x0099	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0099", "value": "04", "time": "2026-10-24T17:33:39.545Z"}
+0x009C	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x009C"}
+0x0100	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0100", "value": "00020B43", "time": "2026-10-24T17:33:39.545Z"}
+0x0101	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0101", "value": "00000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0102	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0102", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x0103	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0103", "value": "00000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0104	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0104", "value": "00000000", "time": "2026-10-24T17:33:39.545Z"}
+0x0105	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0105", "value": "00", "time": "2026-10-24T17:33:39.545Z"}
+0x0106	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0106"}
+0x0107	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0107"}
+0x0108	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0108"}
+0x010E	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x010E"}
+0x010F	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x010F"}
+0x0110	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0110"}
+0x0111	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0111"}
+0x0112	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0112"}
+0x0113	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0113"}
+0x0114	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0114"}
+0x0115	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0115"}
+0x0116	200	{"kind": "appliance#erdListEntry", "userId": "<GE_USER_ID>", "applianceId": "<GE_MAC>", "erd": "0x0116"}
+DONE
