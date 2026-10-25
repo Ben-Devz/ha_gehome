@@ -45,3 +45,75 @@ set_int_value:
           min: 0
           max: 65535
           
+debug_read_erds:
+  name: Debug read raw ERDs
+  description: Returns raw cached ERD hex values, optionally after a full refresh from the cloud.
+  fields:
+    appliance:
+      name: Appliance
+      description: Part of the appliance MAC address (omit for all appliances)
+      selector:
+        text:
+    erds:
+      name: ERDs
+      description: List of ERD codes, e.g. 0x3007 (omit for all)
+      selector:
+        object:
+    refresh:
+      name: Refresh
+      description: Request a full ERD update first
+      default: false
+      selector:
+        boolean:
+    wait:
+      name: Wait
+      description: Seconds to wait after the refresh request
+      default: 5
+      selector:
+        number:
+          min: 0
+          max: 60
+
+debug_write_erd:
+  name: Debug write raw ERD
+  description: Writes a raw hex value to one ERD, bypassing the SDK converters. Can operate the appliance.
+  fields:
+    appliance:
+      name: Appliance
+      description: Part of the appliance MAC address (must match exactly one appliance)
+      required: true
+      selector:
+        text:
+    erd:
+      name: ERD
+      description: ERD code, e.g. 0x3007
+      required: true
+      selector:
+        text:
+    value:
+      name: Value
+      description: Raw hex value to write
+      required: true
+      selector:
+        text:
+
+debug_api_request:
+  name: Debug raw API request
+  description: Raw REST call to the GE Brillion API using the live client's token. POST can operate appliances.
+  fields:
+    path:
+      name: Path
+      description: API path starting with /v1/
+      required: true
+      selector:
+        text:
+    method:
+      name: Method
+      default: GET
+      selector:
+        select:
+          options: ["GET", "POST"]
+    body:
+      name: Body
+      selector:
+        object:
